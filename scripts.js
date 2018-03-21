@@ -1,5 +1,4 @@
 var h = prompt ('Podaj wysokośc choinki');
-var star = '';
 
 if (h <= 0 ) {
 	console.log('Choinka nie istnieje');
@@ -7,8 +6,11 @@ if (h <= 0 ) {
 }
 
 function drawTree(h) {
-	for (var n = 0; n <= h; n++) {
-		star += '*';
+	for (var i = 0; i <= h; i++) {
+		var star = '';
+		for (var j = 0; j <= i; j++) {
+			star += '*';
+		}
+		console.log(star);
 	}
-	console.log(star);
 }
