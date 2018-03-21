@@ -6,9 +6,9 @@ if (h <= 0 ) {
 }
 
 function drawTree(h) {
-	for (var i = 0; i <= h; i++) {
+	for (var n = 0; n <= h; n++) {
 		var star = '';
-		for (var j = 0; j <= i; j++) {
+		for (var j = 0; j <= n; j++) {
 			star += '*';
 		}
 		console.log(star);
