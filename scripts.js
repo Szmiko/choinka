@@ -7,14 +7,8 @@ if (h <= 0 ) {
 }
 
 function drawTree(h) {
-	for (var i = 0; i <= h; i++) {
-		star = '';
-		for (var j = 0; j <= i; j++) {
-			star += '*';
-			if (j = i) {
-				break;
-			}
-		}
-		console.log(star);
+	for (var n = 0; n <= h; n++) {
+		star += '*';
 	}
+	console.log(star);
 }
