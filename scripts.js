@@ -7,10 +7,15 @@ if (h <= 0 ) {
 
 function drawTree(h) {
 	for (var n = 0; n <= h; n++) {
-		var star = '';
+		star = '';
 		for (var j = 0; j <= n; j++) {
 			star += '*';
+			if (j == n) {
+				break;
+			}
 		}
 		console.log(star);
 	}
+	return star;
 }
+drawTree(h); //I have one question, we talk about it later.
