@@ -6,13 +6,10 @@ if (h <= 0 ) {
 }
 
 function drawTree(h) {
-	for (var n = 0; n <= h; n++) {
-		star = '';
-		for (var j = 0; j <= n; j++) {
+	for (var n = 1; n <= h; n++) {
+		var star = '';
+		for (var j = 1; j <= n; j++) {
 			star += '*';
-			if (j == n) {
-				break;
-			}
 		}
 		console.log(star);
 	}
